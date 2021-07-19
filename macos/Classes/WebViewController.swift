@@ -9,7 +9,6 @@ import Cocoa
 import FlutterMacOS
 import WebKit
 
-@available
 class WebViewController: NSViewController {
     enum PresentationStyle: Int {
         case modal = 0
@@ -76,7 +75,6 @@ class WebViewController: NSViewController {
         self.view.window?.close()
     }
     
-    @available
     private func setupViews() {
         webview.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(webview)
